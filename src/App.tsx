@@ -1,6 +1,7 @@
 import './App.css'
-import {HttpExample} from './components/HttpExample.tsx';
-import {SearchPosts} from './components/SearchPosts.tsx';
+import {Timer} from './components/Timer.tsx';
+// import {HttpExample} from './components/HttpExample.tsx';
+// import {SearchPosts} from './components/SearchPosts.tsx';
 // import { ObservableExample } from './components/ObservableExample';
 // import {EventObservable} from './components/EventObservable.tsx';
 // import {CombineObservables} from './components/CombineObservables.tsx';
@@ -15,8 +16,9 @@ function App() {
           <h1 className="text-3xl font-bold mb-8">RxJS Learning</h1>
           <p className="mb-8">Practical examples of RxJS in React</p>
           <div className="space-y-6">
-              <SearchPosts />
-              <HttpExample />
+              <Timer />
+              {/*<SearchPosts />*/}
+              {/*<HttpExample />*/}
               {/*<SimpleExample />*/}
               {/*<ObservableExample/>*/}
               {/*<EventObservable/>*/}
