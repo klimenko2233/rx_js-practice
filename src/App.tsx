@@ -1,5 +1,6 @@
 import './App.css'
-import {UserProfile} from './components/UserProfile.tsx';
+import { AdvancedRegistrationForm } from './components/AdvancedRegistrationForm.tsx';
+// import {UserProfile} from './components/UserProfile.tsx';
 // import {HttpExample} from './components/HttpExample.tsx';
 // import {SearchPosts} from './components/SearchPosts.tsx';
 // import { ObservableExample } from './components/ObservableExample';
@@ -29,7 +30,13 @@ function App() {
               <h1 className="text-3xl font-bold mb-8">RxJS Auth with Real API</h1>
               <p className="mb-8">Real authentication flow with JSONPlaceholder API</p>
 
-              <UserProfile />
+              {/*<UserProfile />*/}
+          </div>
+          <div className="p-8">
+              <h1 className="text-3xl font-bold mb-8">RxJS Advanced Forms</h1>
+              <p className="mb-8">Real-time validation with reactive forms</p>
+
+              <AdvancedRegistrationForm />
           </div>
       </div>
   );
