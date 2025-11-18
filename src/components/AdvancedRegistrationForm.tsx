@@ -36,7 +36,7 @@ export const AdvancedRegistrationForm = () => {
             map(state => state.username),
             distinctUntilChanged((prev, curr) => prev.value === curr.value),
             filter(username => username.value.length >= 3),
-            debounceTime(600), // 🔹 Ждем завершения ввода
+            debounceTime(600),
             filter(username => !formService.getCurrentState().username.error)
         ).subscribe(username => {
             setUsernameAvailability({checking: true, message: 'Checking availability...'});
